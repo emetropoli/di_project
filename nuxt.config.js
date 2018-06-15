@@ -1,37 +1,22 @@
 module.exports = {
-  /*
-  ** Headers of the page
-  */
   head: {
-    title: 'di_project',
+    title: 'starter',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: 'Nuxt.js project' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Rufina|Josefin+Sans:400,700|Playfair+Display:700|Prata' }
     ]
   },
-  /*
-  ** Customize the progress bar color
-  */
-  loading: { color: '#3B8070' },
-  /*
-  ** Build configuration
-  */
+  loading: false,
+  css: ['assets/normalize.css', 'assets/main.css'],
   build: {
-    /*
-    ** Run ESLint on save
-    */
-    extend (config, { isDev, isClient }) {
-      if (isDev && isClient) {
-        config.module.rules.push({
-          enforce: 'pre',
-          test: /\.(js|vue)$/,
-          loader: 'eslint-loader',
-          exclude: /(node_modules)/
-        })
+    extend(config, {isClient, dev}) {
+      if (isClient) {
+        config.entry.app = ["~/SplitText.min", config.entry.app];
       }
     }
   }
