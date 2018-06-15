@@ -13,9 +13,11 @@
     </nuxt-link>
     <nav>
       <div class="title">
-        <nuxt-link to="/rufina">Rufina</nuxt-link>
-        <nuxt-link to="/prata">Prata</nuxt-link>
-        <nuxt-link exact to="/">Playfair</nuxt-link>
+        <nuxt-link to="/cloud">Cloud</nuxt-link>
+        <nuxt-link to="/movil">Móviles</nuxt-link>
+        <nuxt-link to="/iot">IoT</nuxt-link>
+        <nuxt-link to="/chatbot">Chatbots</nuxt-link>
+        <nuxt-link exact to="/">Autoservicio</nuxt-link>
       </div>
     </nav>
 
@@ -53,7 +55,7 @@
 
   @media screen and (max-width: 800px) {
     nav {
-      width: 40px; 
+      width: 40px;
     }
     .title {
       margin-left: 13px;
@@ -62,7 +64,7 @@
 
   .title a, .title a:hover {
     color: rgba(0, 0, 0, 0.8);
-    margin: 60px 0px;
+    margin: 18px 0px;
   }
 
   .title a.nuxt-link-active {
@@ -72,9 +74,9 @@
 
   .logo {
     position: fixed;
-    top: 10px; 
+    top: 10px;
     right: 30px;
-    font-size: 30px; 
+    font-size: 30px;
     color: white;
     text-decoration: none;
     transition: 0.2s opacity ease;

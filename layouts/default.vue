@@ -1,6 +1,6 @@
 <template>
   <div>
-    <img class="moon" src="~assets/FullMoon2010.png" />
+    <img class="kiosco" src="~assets/kiosk2.png" />
     <Navigation />
     <nuxt/>
   </div>
@@ -17,16 +17,16 @@ export default {
 </script>
 
 <style>
-.moon {
+.kiosco {
   position: absolute;
   right: 0;
-  top: 183px;
-  width: 150px;
+  top: 133px;
+  width: 350px;
   z-index: 10;
 }
 
 @media screen and (max-width: 700px) {
-  .moon {
+  .kiosco {
     z-index: 0;
   }
 }
